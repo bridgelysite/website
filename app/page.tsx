@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BuyButton } from "@/components/BuyButton";
 
 export default function HomePage() {
   return (
@@ -47,6 +48,22 @@ export default function HomePage() {
                   Créer ma LLC aux USA
                 </Link>
               </div>
+              
+              {/* BANDEAU DÉFILANT (MARQUEE) */}
+              <div className="relative mt-6 mb-2 overflow-hidden max-w-md">
+                <div className="animate-marquee whitespace-nowrap">
+                  <span className="text-sm font-semibold text-[color:var(--color-primary)] mr-8">
+                    ⚡ Optimisez légalement votre situation comme le font les ultra-riches
+                  </span>
+                  <span className="text-sm font-semibold text-[color:var(--color-primary)] mr-8">
+                    ⚡ Optimisez légalement votre situation comme le font les ultra-riches
+                  </span>
+                  <span className="text-sm font-semibold text-[color:var(--color-primary)] mr-8">
+                    ⚡ Optimisez légalement votre situation comme le font les ultra-riches
+                  </span>
+                </div>
+              </div>
+
             </div>
 
             {/* droite : carte “double pays” */}
@@ -139,7 +156,7 @@ export default function HomePage() {
                  </div>
                  <h3 className="font-semibold text-slate-900 mb-2">Avantages Société Pologne</h3>
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Pourquoi et comment entreprendre en Pologne ? Fiscalité, charges, vie quotidienne.</p>
-                 <button className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</button>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M37" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
               </div>
 
               {/* Pack 2 - Guide Delaware */}
@@ -150,7 +167,7 @@ export default function HomePage() {
                  </div>
                  <h3 className="font-semibold text-slate-900 mb-2">Avantages LLC Delaware</h3>
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Tout savoir sur la LLC au Delaware : anonymat, protection, zéro impôt US (sous conditions).</p>
-                 <button className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</button>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M38" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
               </div>
 
               {/* Pack 3 - Complet Pologne */}
@@ -174,7 +191,7 @@ export default function HomePage() {
                  </div>
                  <h3 className="font-semibold text-slate-900 mb-2">Pack Complet LLC Delaware</h3>
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Operating Agreement modèle, résolutions annuelles, guide compliance & banking.</p>
-                 <button className="btn-secondary w-full text-xs py-2 mt-auto">Voir le détail</button>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M39" className="btn-secondary w-full text-xs py-2 mt-auto">Voir le détail</BuyButton>
               </div>
 
               {/* Pack 5 - Freelance Nomad */}
@@ -185,7 +202,7 @@ export default function HomePage() {
                  </div>
                  <h3 className="font-semibold text-slate-900 mb-2">Kit "Freelance Nomad"</h3>
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Checklist départ, assurance santé, résidence fiscale : ne rien oublier avant de partir.</p>
-                 <button className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</button>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M40" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
               </div>
 
               {/* Pack 6 - Contrats Express */}
@@ -196,7 +213,7 @@ export default function HomePage() {
                  </div>
                  <h3 className="font-semibold text-slate-900 mb-2">Pack Contrats Express</h3>
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Modèles de contrats de prestation bilingues (FR/EN) solides pour vos clients internationaux.</p>
-                 <button className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</button>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M41" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
               </div>
            </div>
             <div className="mt-6 text-center sm:hidden">
