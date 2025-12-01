@@ -208,7 +208,9 @@ export default function HomePage() {
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
                    Société en Pologne : le guide clair et honnête. Comprendre la fiscalité, les charges, le ZUS. Ce que personne n’explique vraiment.
                  </p>
-                 <BuyButton priceId="price_1SZU3rRPyuf04COPYzN4y4KX" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide (29 €)</BuyButton>
+                 <div className="relative z-50 mt-auto w-full">
+                    <BuyButton priceId="price_1SZU3rRPyuf04COPYzN4y4KX" className="btn-secondary w-full text-xs py-2">Acheter le guide (29 €)</BuyButton>
+                 </div>
               </div>
 
               {/* Pack 3 - Pack LLC USA Pro */}

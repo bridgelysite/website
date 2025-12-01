@@ -20,7 +20,6 @@ export default function PolognePackPage() {
             <li>• Checklist administrative avant création</li>
             <li>• Modèle de statuts commenté (sp. z o.o.)</li>
             <li>• Modèles simples de facture & contrat de prestation</li>
-            <li>• Mini-formation vidéo (≈ 60 min) : comprendre la Pologne en pratique</li>
             <li>• E-mails types pour la banque, l’administration, la comptabilité</li>
           </ul>
 
