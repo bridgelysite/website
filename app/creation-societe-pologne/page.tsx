@@ -59,8 +59,7 @@ export default function CreationPolognePage() {
             </ul>
             <div className="mt-4">
               <p className="text-2xl font-bold text-[color:var(--color-accent)] mb-4">990 € <span className="text-sm font-normal text-slate-400">HT</span></p>
-              {/* TODO: Remplacer par le vrai Price ID 'Formule Standard' */}
-              <BuyButton priceId="price_PLACEHOLDER_STD" className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm">
+              <BuyButton priceId="price_1SZVOiRPyuf04COPv5rrXKrP" className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm">
                 Commander la Standard
               </BuyButton>
               <p className="text-[10px] text-slate-400 mt-2 text-center">
@@ -83,8 +82,7 @@ export default function CreationPolognePage() {
             </ul>
             <div className="mt-4">
               <p className="text-2xl font-bold text-slate-900 mb-4">1 490 € <span className="text-sm font-normal text-slate-500">HT</span></p>
-              {/* TODO: Remplacer par le vrai Price ID 'Formule Plus' */}
-              <BuyButton priceId="price_PLACEHOLDER_PLUS" className="w-full btn-primary py-3 rounded-xl text-sm justify-center">
+              <BuyButton priceId="price_1SZVQ3RPyuf04COPAt7wWulO" className="w-full btn-primary py-3 rounded-xl text-sm justify-center">
                 Commander la Formule Plus
               </BuyButton>
               <p className="text-[10px] text-slate-500 mt-2 text-center">

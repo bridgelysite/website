@@ -75,8 +75,7 @@ export default function LlcUsaPage() {
                 </p>
                 <p className="text-2xl font-bold text-[color:var(--color-accent)] mb-4">890 € <span className="text-sm font-normal text-slate-400">HT</span></p>
                 
-                {/* TODO: Remplacer par le vrai Price ID 'LLC Standard' */}
-                <BuyButton priceId="price_PLACEHOLDER_LLC_STD" className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm">
+                <BuyButton priceId="price_1SZVSqRPyuf04COPQmrC6lJk" className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm">
                   Commander LLC Standard
                 </BuyButton>
                 <p className="text-[10px] text-slate-400 mt-2 text-center">
@@ -103,8 +102,7 @@ export default function LlcUsaPage() {
                 </p>
                 <p className="text-2xl font-bold text-slate-900 mb-4">1 290 € <span className="text-sm font-normal text-slate-500">HT</span></p>
                 
-                {/* TODO: Remplacer par le vrai Price ID 'LLC Plus' */}
-                <BuyButton priceId="price_PLACEHOLDER_LLC_PLUS" className="w-full btn-primary py-3 rounded-xl text-sm justify-center">
+                <BuyButton priceId="price_1SZVtVRPyuf04COPUiX3tdow" className="w-full btn-primary py-3 rounded-xl text-sm justify-center">
                   Commander LLC Plus
                 </BuyButton>
                  <p className="text-[10px] text-slate-500 mt-2 text-center">
