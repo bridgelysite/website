@@ -11,6 +11,7 @@ interface OptionalBuyButtonProps {
   optionLabel: string;
   buttonLabel: string;
   className?: string;
+  totalPriceClassName?: string; // New prop for custom styling of the total price
 }
 
 export const OptionalBuyButton = ({
@@ -22,6 +23,7 @@ export const OptionalBuyButton = ({
   optionLabel,
   buttonLabel,
   className,
+  totalPriceClassName = "text-slate-900", // Default to dark text
 }: OptionalBuyButtonProps) => {
   const [loading, setLoading] = useState(false);
   const [isOptionSelected, setIsOptionSelected] = useState(false);
@@ -78,9 +80,9 @@ export const OptionalBuyButton = ({
       </div>
 
       {/* Prix Total Affiché */}
-      <div className="mb-4 flex items-baseline justify-between border-t border-slate-100 pt-3 border-dashed">
-          <span className="text-sm font-medium text-slate-600">Total à payer :</span>
-          <span className="text-xl font-bold text-slate-900">{totalPrice} € <span className="text-xs font-normal text-slate-400">HT</span></span>
+      <div className="mb-4 flex items-baseline justify-between border-t border-slate-100/20 pt-3 border-dashed">
+          <span className={`text-sm font-medium ${totalPriceClassName.includes("text-white") ? "text-slate-300" : "text-slate-600"}`}>Total à payer :</span>
+          <span className={`text-xl font-bold ${totalPriceClassName}`}>{totalPrice} € <span className={`text-xs font-normal ${totalPriceClassName.includes("text-white") ? "text-slate-400" : "text-slate-400"}`}>HT</span></span>
       </div>
 
       <button
@@ -93,4 +95,3 @@ export const OptionalBuyButton = ({
     </div>
   );
 };
-
