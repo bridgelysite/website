@@ -206,16 +206,9 @@ export default function HomePage() {
                  </div>
                  <h3 className="font-semibold text-slate-900 mb-2">Guide Pologne — Avantages & Fiscalité</h3>
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
-                   Société en Pologne : le guide clair et honnête. Comprendre la fiscalité, les charges, le ZUS. Ce que personne n’explique vraiment.
+                    Société en Pologne : le guide clair et honnête. Comprendre la fiscalité, les charges, le ZUS. Ce que personne n’explique vraiment — présenté simplement.
                  </p>
-                 <div className="relative z-50 mt-auto w-full">
-                    <a 
-                      href="https://buy.stripe.com/fZu00lgNddy9eoN7h6"
-                      className="btn-secondary w-full text-xs py-2 text-center block"
-                    >
-                      Acheter le guide (29 €)
-                    </a>
-                 </div>
+                 <BuyButton priceId="price_1SZXMPRPyuf04COP5rmIqoit" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide (39 €)</BuyButton>
               </div>
 
               {/* Pack 3 - Pack LLC USA Pro */}
