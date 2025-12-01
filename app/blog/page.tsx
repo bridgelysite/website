@@ -27,6 +27,15 @@ const posts = [
     readTime: "4 min",
   },
   {
+    slug: "pourquoi-choisir-pologne-business",
+    title: "Pourquoi la Pologne est le nouvel eldorado des entrepreneurs digitaux",
+    excerpt:
+      "Fiscalité avantageuse, coûts réduits, écosystème tech dynamique : découvrez pourquoi de plus en plus d'entrepreneurs choisissent Varsovie ou Cracovie.",
+    date: "1 Décembre 2025",
+    category: "Pologne",
+    readTime: "5 min",
+  },
+  {
     slug: "llc-delaware-vs-wyoming",
     title: "LLC Delaware vs Wyoming : Le comparatif honnête",
     excerpt:
