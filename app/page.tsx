@@ -89,13 +89,13 @@ export default function HomePage() {
                 {/* Ligne 2 (décalée ou différente) */}
                 <div className="animate-marquee whitespace-nowrap" style={{ animationDirection: 'reverse' }}>
                    <span className="text-sm font-medium text-[color:var(--color-primary)] mr-8">
-                    COMME LE FONT LES ULTRA-RICHES 💎
+                    COMME LE FONT LES ULTRA-RICHES
                   </span>
                   <span className="text-sm font-medium text-[color:var(--color-primary)] mr-8">
-                    COMME LE FONT LES ULTRA-RICHES 💎
+                    COMME LE FONT LES ULTRA-RICHES
                   </span>
                   <span className="text-sm font-medium text-[color:var(--color-primary)] mr-8">
-                    COMME LE FONT LES ULTRA-RICHES 💎
+                    COMME LE FONT LES ULTRA-RICHES
                   </span>
                 </div>
               </div>
