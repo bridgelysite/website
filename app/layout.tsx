@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
   },
   verification: {
-    google: "yzdB5I9HsmiNPm5zayUGcocDYMZqInEK3HIz6x-Bxc0",
+    google: "cDxBaVBJKGj6jLVMWtffyrtuYzpp_mMJaCNECgNd5jE",
   },
   icons: {
     icon: "/favicon.ico",
