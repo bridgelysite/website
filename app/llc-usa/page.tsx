@@ -85,7 +85,7 @@ export default function LlcUsaPage() {
           </div>
 
           <div className="bg-white border border-slate-200 rounded-3xl p-6 flex flex-col shadow-sm">
-            <h3 className="text-lg font-semibold mb-2 text-slate-900">LLC + Europe (Formule Plus)</h3>
+            <h3 className="text-lg font-semibold mb-2 text-slate-900">LLC Formule Plus</h3>
             <p className="text-sm text-slate-600 mb-4">
               Pour les entrepreneurs qui combinent activité européenne et
               américaine et veulent une vision claire des impacts.
