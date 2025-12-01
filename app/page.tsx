@@ -13,26 +13,30 @@ export default function HomePage() {
           <div className="container-bridgely grid gap-10 lg:grid-cols-[1.1fr_minmax(0,0.9fr)] lg:items-center">
             {/* gauche */}
             <div>
-              <div className="flex flex-wrap items-center gap-4 mb-6">
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm border border-slate-200/50">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium text-slate-700 shadow-sm border border-slate-200">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
                   <span>Structures optimisées • Europe & USA</span>
                 </div>
                 
-                {/* PREUVE SOCIALE : 500+ CLIENTS */}
-                <div className="flex items-center gap-2">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="h-6 w-6 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
-                         {/* Placeholder avatars générés par CSS/SVG pour éviter les images externes */}
-                         <svg className="h-full w-full text-slate-400 bg-slate-100" fill="currentColor" viewBox="0 0 24 24">
-                           <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                         </svg>
-                      </div>
-                    ))}
+                {/* PREUVE SOCIALE : 500+ CLIENTS (Version Améliorée) */}
+                <div className="flex items-center gap-3">
+                  <div className="flex -space-x-3">
+                    <div className="h-8 w-8 rounded-full border-2 border-white bg-blue-100 flex items-center justify-center text-[10px] font-bold text-blue-700">JD</div>
+                    <div className="h-8 w-8 rounded-full border-2 border-white bg-purple-100 flex items-center justify-center text-[10px] font-bold text-purple-700">AL</div>
+                    <div className="h-8 w-8 rounded-full border-2 border-white bg-amber-100 flex items-center justify-center text-[10px] font-bold text-amber-700">MK</div>
+                    <div className="h-8 w-8 rounded-full border-2 border-white bg-slate-800 flex items-center justify-center text-[10px] font-bold text-white">+500</div>
                   </div>
-                  <div className="text-xs font-medium text-slate-600">
-                    <span className="font-bold text-slate-900">500+</span> entrepreneurs accompagnés
+                  <div className="flex flex-col leading-none">
+                    <div className="flex items-center gap-1">
+                      <span className="text-amber-400 text-xs">★★★★★</span>
+                    </div>
+                    <span className="text-xs font-medium text-slate-600 mt-0.5">
+                      Entrepreneurs accompagnés
+                    </span>
                   </div>
                 </div>
               </div>
