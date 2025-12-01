@@ -70,6 +70,9 @@ export default function LlcUsaPage() {
               <li>• Pack de documents LLC (Articles of Org.)</li>
             </ul>
             <div className="mt-4">
+                <p className="text-sm font-semibold mb-1">
+                Honoraires Bridgely (hors frais d’État) :
+                </p>
                 <OptionalBuyButton
                   mainPriceId="price_1SZVSqRPyuf04COPQmrC6lJk"
                   mainPriceLabel="LLC Standard"
@@ -96,6 +99,9 @@ export default function LlcUsaPage() {
               <li>• Guide digital "LLC & fiscalité internationale"</li>
             </ul>
              <div className="mt-4">
+                <p className="text-sm font-semibold text-slate-700 mb-1">
+                Honoraires Bridgely (hors frais d’État) :
+                </p>
                 <OptionalBuyButton
                   mainPriceId="price_1SZVtVRPyuf04COPUiX3tdow"
                   mainPriceLabel="LLC Formule Plus"
