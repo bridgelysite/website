@@ -29,10 +29,11 @@ export default function ContactPage() {
           <div className="space-y-3 text-sm text-slate-800">
             <p>
               📧 E-mail :{" "}
-              <span className="font-semibold">contact@bridgely.fr</span>
+              <span className="font-semibold">hinnovllc@gmail.com</span>
             </p>
             <p>
-              💬 WhatsApp / Signal (sur demande) : indiqué dans nos échanges.
+              💬 WhatsApp :{" "}
+              <span className="font-semibold">+48 505 992 845</span>
             </p>
             <p className="text-xs text-slate-500 mt-4">
               Dans votre premier message, précisez simplement : votre pays de

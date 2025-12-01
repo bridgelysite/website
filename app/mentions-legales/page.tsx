@@ -14,7 +14,8 @@ export default function MentionsLegalesPage() {
               H INNOV LLC<br />
               8 THE GREEN<br />
               19901 DOVER (DE)<br />
-              USA
+              USA<br />
+              E-mail : hinnovllc@gmail.com
             </p>
           </section>
 
