@@ -117,7 +117,7 @@ export default function ConsultingPage() {
                 priceId="price_1SZUrARPyuf04COPFZdQyXwa"
                 className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25"
                 >
-                🔵 Prendre rendez-vous
+                Prendre rendez-vous
                 </BuyButton>
             </div>
             <p className="mt-3 text-[10px] text-slate-400">
@@ -182,7 +182,7 @@ export default function ConsultingPage() {
               priceId="price_1SZUrARPyuf04COPFZdQyXwa"
               className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 text-lg"
             >
-              🔵 Prendre rendez-vous
+              Prendre rendez-vous
             </BuyButton>
             
             <p className="mt-4 text-xs text-slate-400 max-w-md mx-auto">
