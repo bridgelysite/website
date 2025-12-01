@@ -5,7 +5,6 @@ if (!process.env.STRIPE_SECRET_KEY) {
 }
 
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: "2024-11-20.acacia", // Use latest or compatible version
+  apiVersion: "2024-12-18.acacia", // Updated to a valid, recent version supported by the SDK
   typescript: true,
 });
-
