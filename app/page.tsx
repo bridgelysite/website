@@ -13,9 +13,28 @@ export default function HomePage() {
           <div className="container-bridgely grid gap-10 lg:grid-cols-[1.1fr_minmax(0,0.9fr)] lg:items-center">
             {/* gauche */}
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm mb-4">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                <span>Structures optimisées • Europe & USA</span>
+              <div className="flex flex-wrap items-center gap-4 mb-6">
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm border border-slate-200/50">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  <span>Structures optimisées • Europe & USA</span>
+                </div>
+                
+                {/* PREUVE SOCIALE : 500+ CLIENTS */}
+                <div className="flex items-center gap-2">
+                  <div className="flex -space-x-2">
+                    {[1, 2, 3, 4].map((i) => (
+                      <div key={i} className="h-6 w-6 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+                         {/* Placeholder avatars générés par CSS/SVG pour éviter les images externes */}
+                         <svg className="h-full w-full text-slate-400 bg-slate-100" fill="currentColor" viewBox="0 0 24 24">
+                           <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                         </svg>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="text-xs font-medium text-slate-600">
+                    <span className="font-bold text-slate-900">500+</span> entrepreneurs accompagnés
+                  </div>
+                </div>
               </div>
 
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--color-primary)] mb-3">
