@@ -4,6 +4,7 @@ import { stripe } from "@/lib/stripe";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
+    console.log("DEBUG Checkout:", body); // Added DEBUG log
     const { priceId, extraItems } = body;
 
     if (!priceId) {
