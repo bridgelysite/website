@@ -156,12 +156,14 @@ export default function HomePage() {
                   Une session de consulting permet d’arbitrer sereinement entre
                   Pologne, LLC USA ou une combinaison des deux.
                 </p>
-                <Link
-                  href="/consulting-international"
+                <a
+                  href="https://calendly.com/hinnovllc/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex text-[11px] font-semibold text-[color:var(--color-primary)] hover:underline"
                 >
                   Voir le consulting international →
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -375,9 +377,14 @@ export default function HomePage() {
             main.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/consulting-international" className="btn-primary">
+            <a
+              href="https://calendly.com/hinnovllc/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               Réserver un consulting
-            </Link>
+            </a>
             <Link href="/contact" className="btn-secondary">
               Poser une première question rapide
             </Link>

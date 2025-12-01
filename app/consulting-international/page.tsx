@@ -40,12 +40,14 @@ export default function ConsultingPage() {
              <div className="text-xl font-bold text-slate-900">
                149 € <span className="text-xs font-normal text-slate-500 uppercase">HT</span>
              </div>
-             <BuyButton 
-                priceId="price_1SZUrARPyuf04COPFZdQyXwa"
+             <a 
+                href="https://calendly.com/hinnovllc/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary py-2 px-5 text-sm shadow-sm"
              >
                 Réserver maintenant
-             </BuyButton>
+             </a>
           </div>
         </div>
       </section>
@@ -113,12 +115,14 @@ export default function ConsultingPage() {
                     149 € <span className="text-sm font-normal text-slate-400">HT</span>
                     </div>
                 </div>
-                <BuyButton 
-                priceId="price_1SZUrARPyuf04COPFZdQyXwa"
-                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25"
+                <a 
+                href="https://calendly.com/hinnovllc/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 block text-center"
                 >
                 Prendre rendez-vous
-                </BuyButton>
+                </a>
             </div>
             <p className="mt-3 text-[10px] text-slate-400">
               Paiement sécurisé via Stripe. Lien calendrier envoyé immédiatement.
@@ -178,12 +182,14 @@ export default function ConsultingPage() {
               149 € <span className="text-base font-normal text-slate-400">HT</span>
             </div>
             
-            <BuyButton 
-              priceId="price_1SZUrARPyuf04COPFZdQyXwa"
-              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 text-lg"
+            <a 
+              href="https://calendly.com/hinnovllc/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 text-lg block text-center"
             >
               Prendre rendez-vous
-            </BuyButton>
+            </a>
             
             <p className="mt-4 text-xs text-slate-400 max-w-md mx-auto">
               Paiement sécurisé via Stripe. Facture éditée automatiquement.
