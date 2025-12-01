@@ -1,8 +1,6 @@
 import { Resend } from "resend";
 
-if (!process.env.RESEND_API_KEY) {
-  console.warn("RESEND_API_KEY is missing in environment variables");
-}
+const resendKey = process.env.RESEND_API_KEY;
 
-export const resend = new Resend(process.env.RESEND_API_KEY);
-
+// Si la clé est absente (ex: pendant le build), on utilise une clé dummy pour ne pas faire planter le build
+export const resend = new Resend(resendKey || "re_123456789");
