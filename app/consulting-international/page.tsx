@@ -26,7 +26,7 @@ export default function ConsultingPage() {
               Sans approximation.
             </span>
           </h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
             Vous avez une question précise sur la Pologne, les LLC USA, votre
             fiscalité ou un doute sur un montage ? <br />
             <span className="font-semibold text-slate-900">
@@ -34,10 +34,23 @@ export default function ConsultingPage() {
               argumentée, et immédiatement exploitable.
             </span>
           </p>
+          
+          {/* Rappel discret prix + bouton haut de page */}
+          <div className="flex items-center justify-center gap-4">
+             <div className="text-xl font-bold text-slate-900">
+               149 € <span className="text-xs font-normal text-slate-500 uppercase">HT</span>
+             </div>
+             <BuyButton 
+                priceId="price_1SZUrARPyuf04COPFZdQyXwa"
+                className="btn-primary py-2 px-5 text-sm shadow-sm"
+             >
+                Réserver maintenant
+             </BuyButton>
+          </div>
         </div>
       </section>
 
-      <div className="container-bridgely max-w-3xl -mt-8 relative z-10">
+      <div className="container-bridgely max-w-3xl -mt-8 relative z-10 space-y-12">
         {/* Main Content Card */}
         <div className="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
           {/* Section: Intro Lists */}
@@ -91,6 +104,27 @@ export default function ConsultingPage() {
             </div>
           </div>
 
+          {/* CTA INTERMÉDIAIRE (Dupliqué) */}
+           <div className="bg-slate-900 p-8 text-center text-white">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <div className="text-left">
+                    <h2 className="text-lg font-bold mb-1">Session Consulting Expert</h2>
+                    <div className="text-2xl font-extrabold text-white">
+                    149 € <span className="text-sm font-normal text-slate-400">HT</span>
+                    </div>
+                </div>
+                <BuyButton 
+                priceId="price_1SZUrARPyuf04COPFZdQyXwa"
+                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25"
+                >
+                🔵 Prendre rendez-vous
+                </BuyButton>
+            </div>
+            <p className="mt-3 text-[10px] text-slate-400">
+              Paiement sécurisé via Stripe. Lien calendrier envoyé immédiatement.
+            </p>
+          </div>
+
           {/* Section: Pour qui + Pourquoi */}
           <div className="p-8 sm:p-12 grid gap-12 sm:grid-cols-2">
             <div>
@@ -137,19 +171,15 @@ export default function ConsultingPage() {
             </div>
           </div>
 
-          {/* Pricing & CTA Section */}
+          {/* Pricing & CTA Section (Final) */}
           <div className="bg-slate-900 p-8 sm:p-12 text-center text-white">
             <h2 className="text-2xl font-bold mb-2">Session Consulting Expert</h2>
             <div className="text-4xl font-extrabold text-white mb-6">
               149 € <span className="text-base font-normal text-slate-400">HT</span>
             </div>
             
-            {/* 
-              TODO: Insérer le priceId du Consulting (149€) ci-dessous 
-              Exemple: priceId="price_1Qj..." 
-            */}
             <BuyButton 
-              priceId="price_CONSULTING_PLACEHOLDER" 
+              priceId="price_1SZUrARPyuf04COPFZdQyXwa"
               className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 text-lg"
             >
               🔵 Prendre rendez-vous
