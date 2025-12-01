@@ -1,3 +1,5 @@
+import { BuyButton } from "@/components/BuyButton";
+
 export default function PolognePackPage() {
   return (
     <div className="section">
@@ -33,9 +35,10 @@ export default function PolognePackPage() {
             Pack au format numérique, accessible immédiatement après paiement.
           </p>
 
-          <button className="btn-primary">
-            Bientôt disponible • Paiement sécurisé
-          </button>
+          {/* TODO: Remplacer 'price_PLACEHOLDER' par le vrai Price ID du Pack Pologne (79€) */}
+          <BuyButton priceId="price_PLACEHOLDER_POLOGNE_PACK" className="btn-primary w-full justify-center text-center">
+            Acheter le pack • 79 €
+          </BuyButton>
         </div>
       </div>
     </div>
