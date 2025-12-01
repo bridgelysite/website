@@ -106,7 +106,7 @@ export default function CreationPolognePage() {
 
         <div className="text-center mb-10">
             <p className="text-xs text-slate-500 italic">
-                * Le surcoût de 350 € par associé supplémentaire sera facturé séparément après la commande initiale.
+                * Les frais de greffe, de domiciliation (à déterminer) et du tribunal de commerce (350 PLN) seront à payer séparément.
             </p>
         </div>
 
