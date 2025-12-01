@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ConfigurableBuyButton } from "@/components/ConfigurableBuyButton";
+import { OptionalBuyButton } from "@/components/OptionalBuyButton";
 
 export const metadata: Metadata = {
   title: "Création LLC USA (Delaware, Wyoming) | Bridgely",
@@ -70,19 +70,16 @@ export default function LlcUsaPage() {
               <li>• Pack de documents LLC (Articles of Org.)</li>
             </ul>
             <div className="mt-4">
-                <ConfigurableBuyButton
+                <OptionalBuyButton
                   mainPriceId="price_1SZVSqRPyuf04COPQmrC6lJk"
                   mainPriceLabel="LLC Standard"
                   basePrice={890}
-                  extraOptionPriceId="price_1SZVRrRPyuf04COPkLcCj0Rb"
-                  extraOptionPrice={350}
-                  extraOptionLabel="Associé supplémentaire"
+                  optionPriceId="price_1SZVVERPyuf04COPJiX9YpcB"
+                  optionPrice={350}
+                  optionLabel="Option : Compte en banque en ligne"
                   buttonLabel="Commander LLC Standard"
                   className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm"
                 />
-                <p className="text-[10px] text-slate-400 mt-2 text-center">
-                   Compte en banque en ligne en option : + 350 €
-                </p>
             </div>
           </div>
 
@@ -99,26 +96,23 @@ export default function LlcUsaPage() {
               <li>• Guide digital "LLC & fiscalité internationale"</li>
             </ul>
              <div className="mt-4">
-                <ConfigurableBuyButton
+                <OptionalBuyButton
                   mainPriceId="price_1SZVtVRPyuf04COPUiX3tdow"
                   mainPriceLabel="LLC Formule Plus"
                   basePrice={1290}
-                  extraOptionPriceId="price_1SZVRrRPyuf04COPkLcCj0Rb"
-                  extraOptionPrice={350}
-                  extraOptionLabel="Associé supplémentaire"
+                  optionPriceId="price_1SZVVERPyuf04COPJiX9YpcB"
+                  optionPrice={350}
+                  optionLabel="Option : Compte en banque en ligne"
                   buttonLabel="Commander LLC Plus"
                   className="w-full btn-primary py-3 rounded-xl text-sm justify-center"
                 />
-                 <p className="text-[10px] text-slate-500 mt-2 text-center">
-                   Compte en banque en ligne en option : + 350 €
-                </p>
             </div>
           </div>
         </div>
         
         <div className="text-center mb-10">
             <p className="text-xs text-slate-500 italic">
-                * Les frais d'État (State Fees) et l'option compte bancaire (+350€) seront facturés séparément selon l'État choisi.
+                * Les frais d'État (State Fees) seront facturés séparément selon l'État choisi.
             </p>
         </div>
 
