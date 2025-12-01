@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BuyButton } from "@/components/BuyButton";
 
 export const metadata: Metadata = {
   title: "Création Société en Pologne (sp. z o.o.) | Fiscalité 9% | Bridgely",
@@ -43,48 +44,68 @@ export default function CreationPolognePage() {
           </ul>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 mb-10">
-          <div className="bg-slate-900 text-slate-50 rounded-3xl p-6">
+        <div className="grid gap-6 md:grid-cols-2 mb-6">
+          <div className="bg-slate-900 text-slate-50 rounded-3xl p-6 flex flex-col">
             <h3 className="text-lg font-semibold mb-2">Formule Standard</h3>
             <p className="text-sm text-slate-200 mb-4">
               Idéale pour les freelances, consultants, e-commerçants et petites
               structures qui veulent se lancer proprement.
             </p>
-            <ul className="text-sm space-y-2 mb-4">
+            <ul className="text-sm space-y-2 mb-4 flex-1">
               <li>• Création complète de la société</li>
               <li>• NIP, REGON, TVA si nécessaire</li>
               <li>• Mise en relation comptable</li>
               <li>• 30 jours de support par e-mail</li>
             </ul>
-            <p className="text-sm font-semibold">
-              Honoraires : <span className="text-[color:var(--color-accent)]">990 €</span> HT
-            </p>
+            <div className="mt-4">
+              <p className="text-2xl font-bold text-[color:var(--color-accent)] mb-4">990 € <span className="text-sm font-normal text-slate-400">HT</span></p>
+              {/* TODO: Remplacer par le vrai Price ID 'Formule Standard' */}
+              <BuyButton priceId="price_PLACEHOLDER_STD" className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm">
+                Commander la Standard
+              </BuyButton>
+              <p className="text-[10px] text-slate-400 mt-2 text-center">
+                + 350 € par associé supplémentaire
+              </p>
+            </div>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-3xl p-6">
-            <h3 className="text-lg font-semibold mb-2">Formule Plus (recommandée)</h3>
+          <div className="bg-white border border-slate-200 rounded-3xl p-6 flex flex-col shadow-sm">
+            <h3 className="text-lg font-semibold mb-2 text-slate-900">Formule Plus (recommandée)</h3>
             <p className="text-sm text-slate-600 mb-4">
               Pour les entrepreneurs qui veulent aller plus loin avec une vision
               claire de la fiscalité et de la structuration future.
             </p>
-            <ul className="text-sm space-y-2 mb-4 text-slate-700">
+            <ul className="text-sm space-y-2 mb-4 text-slate-700 flex-1">
               <li>• Tout ce qui est inclus dans la Formule Standard</li>
-              <li>• 1 session de consulting (45 min) sur la structuration internationale</li>
+              <li>• <strong className="text-slate-900">Obtention du numéro NIP (incluse)</strong></li>
               <li>• Pack digital Pologne offert</li>
               <li>• Support étendu 60 jours</li>
             </ul>
-            <p className="text-sm font-semibold">
-              Honoraires : <span className="text-[color:var(--color-accent)]">1 490 €</span> HT
-            </p>
+            <div className="mt-4">
+              <p className="text-2xl font-bold text-slate-900 mb-4">1 490 € <span className="text-sm font-normal text-slate-500">HT</span></p>
+              {/* TODO: Remplacer par le vrai Price ID 'Formule Plus' */}
+              <BuyButton priceId="price_PLACEHOLDER_PLUS" className="w-full btn-primary py-3 rounded-xl text-sm justify-center">
+                Commander la Formule Plus
+              </BuyButton>
+              <p className="text-[10px] text-slate-500 mt-2 text-center">
+                + 350 € par associé supplémentaire
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-3">
-          <Link href="/contact" className="btn-primary">
-            Demander un accompagnement
+        <div className="text-center mb-10">
+            <p className="text-xs text-slate-500 italic">
+                * Le surcoût de 350 € par associé supplémentaire sera facturé séparément après la commande initiale.
+            </p>
+        </div>
+
+        <div className="flex flex-wrap gap-3 justify-center">
+          <Link href="/contact" className="btn-secondary">
+            Une question avant de commander ?
           </Link>
-          <Link href="/pologne-business-pack" className="btn-secondary">
-            Voir le Pack digital Pologne
+          <Link href="/pologne-business-pack" className="text-sm font-semibold text-slate-600 hover:text-slate-900 underline flex items-center">
+            Voir le Pack digital Pologne uniquement
           </Link>
         </div>
       </div>
