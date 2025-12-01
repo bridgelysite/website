@@ -50,8 +50,8 @@ export default function PacksDigitauxPage() {
               Société en Pologne : le guide clair et honnête. Comprendre la fiscalité, les charges, le ZUS. Ce que personne n’explique vraiment.
             </p>
             <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span className="text-xl font-bold text-slate-900">29 €</span>
-              <BuyButton priceId="price_1SZU3rRPyuf04COPYzN4y4KX" className="btn-secondary px-4 py-2 text-xs h-auto">
+              <span className="text-xl font-bold text-slate-900">39 €</span>
+              <BuyButton priceId="price_1SZXMPRPyuf04COP5rmIqoit" className="btn-secondary px-4 py-2 text-xs h-auto">
                 Acheter
               </BuyButton>
             </div>
