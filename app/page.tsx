@@ -208,7 +208,8 @@ export default function HomePage() {
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
                    Société en Pologne : le guide clair et honnête. Comprendre la fiscalité, les charges, le ZUS. Ce que personne n’explique vraiment.
                  </p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M37" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
+                 {/* TODO: Remplacer par le vrai Price ID du Guide Pologne */}
+                 <BuyButton priceId="price_PLACEHOLDER_GUIDE_POLOGNE" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
               </div>
 
               {/* Pack 3 - Pack LLC USA Pro */}
@@ -222,7 +223,7 @@ export default function HomePage() {
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
                    LLC Delaware/Wyoming : la structure internationale fiable. Operating Agreement, banking, compliance. Pour créer une LLC propre et sécurisée.
                  </p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M39" className="btn-primary w-full text-xs py-2 mt-auto">Voir le détail</BuyButton>
+                 <BuyButton priceId="price_1SZU4SRPyuf04COPwcxYwxtO" className="btn-primary w-full text-xs py-2 mt-auto">Voir le détail</BuyButton>
               </div>
 
               {/* Pack 4 - Guide LLC Delaware */}
@@ -235,7 +236,7 @@ export default function HomePage() {
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
                    Tout comprendre sans se faire avoir. Confidentialité, fiscalité 0 %, banques, obligations réelles. Le guide qui explique tout — sans promesses magiques.
                  </p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M38" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
+                 <BuyButton priceId="price_1SZU4sRPyuf04COPckroruE7" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
               </div>
 
               {/* Pack 5 - Kit Freelance Nomad */}
@@ -248,7 +249,7 @@ export default function HomePage() {
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
                    Ne rien oublier avant de partir. Checklist voyage, assurance, fiscalité, résidence, risques. Parfait pour freelances et indépendants.
                  </p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M40" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
+                 <BuyButton priceId="price_1SZU5HRPyuf04COPwhU1zQMS" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
               </div>
 
               {/* Pack 6 - Contrats Pro */}
@@ -261,7 +262,7 @@ export default function HomePage() {
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
                    Contrats prêts à signer pour freelances & consultants. Modèles solides, bilingues, propres. Pour travailler avec des clients internationaux sans prise de tête.
                  </p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M41" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
+                 <BuyButton priceId="price_1SZU5fRPyuf04COPxtVyrsQ4" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
               </div>
            </div>
             <div className="mt-6 text-center sm:hidden">

@@ -51,7 +51,8 @@ export default function PacksDigitauxPage() {
             </p>
             <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xl font-bold text-slate-900">29 €</span>
-              <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M37" className="btn-secondary px-4 py-2 text-xs h-auto">
+              {/* TODO: Remplacer par le vrai Price ID du Guide Pologne */}
+              <BuyButton priceId="price_PLACEHOLDER_GUIDE_POLOGNE" className="btn-secondary px-4 py-2 text-xs h-auto">
                 Acheter
               </BuyButton>
             </div>
@@ -73,7 +74,7 @@ export default function PacksDigitauxPage() {
             </p>
             <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xl font-bold text-slate-900">89 €</span>
-              <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M39" className="btn-primary px-4 py-2 text-xs h-auto">
+              <BuyButton priceId="price_1SZU4SRPyuf04COPwcxYwxtO" className="btn-primary px-4 py-2 text-xs h-auto">
                 Voir le détail
               </BuyButton>
             </div>
@@ -94,7 +95,7 @@ export default function PacksDigitauxPage() {
             </p>
             <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xl font-bold text-slate-900">29 €</span>
-              <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M38" className="btn-secondary px-4 py-2 text-xs h-auto">
+              <BuyButton priceId="price_1SZU4sRPyuf04COPckroruE7" className="btn-secondary px-4 py-2 text-xs h-auto">
                 Acheter
               </BuyButton>
             </div>
@@ -115,7 +116,7 @@ export default function PacksDigitauxPage() {
             </p>
             <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xl font-bold text-slate-900">49 €</span>
-              <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M40" className="btn-secondary px-4 py-2 text-xs h-auto">
+              <BuyButton priceId="price_1SZU5HRPyuf04COPwhU1zQMS" className="btn-secondary px-4 py-2 text-xs h-auto">
                 Acheter
               </BuyButton>
             </div>
@@ -136,7 +137,7 @@ export default function PacksDigitauxPage() {
             </p>
             <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xl font-bold text-slate-900">49 €</span>
-              <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M41" className="btn-secondary px-4 py-2 text-xs h-auto">
+              <BuyButton priceId="price_1SZU5fRPyuf04COPxtVyrsQ4" className="btn-secondary px-4 py-2 text-xs h-auto">
                 Acheter
               </BuyButton>
             </div>
