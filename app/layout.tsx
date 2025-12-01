@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     url: "https://bridgely.fr",
     siteName: "Bridgely",
     type: "website",
-    verification: {
-      google: "yzdB5I9HsmiNPm5zayUGcocDYMZqInEK3HIz6x-Bxc0",
-    },
     locale: "fr_FR",
+  },
+  verification: {
+    google: "yzdB5I9HsmiNPm5zayUGcocDYMZqInEK3HIz6x-Bxc0",
   },
   icons: {
     icon: "/favicon.ico",
