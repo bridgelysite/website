@@ -51,8 +51,7 @@ export default function PacksDigitauxPage() {
             </p>
             <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xl font-bold text-slate-900">29 €</span>
-              {/* TODO: Remplacer par le vrai Price ID du Guide Pologne */}
-              <BuyButton priceId="price_PLACEHOLDER_GUIDE_POLOGNE" className="btn-secondary px-4 py-2 text-xs h-auto">
+              <BuyButton priceId="price_1SZU3rRPyuf04COPYzN4y4KX" className="btn-secondary px-4 py-2 text-xs h-auto">
                 Acheter
               </BuyButton>
             </div>
