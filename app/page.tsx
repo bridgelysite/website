@@ -210,7 +210,7 @@ export default function HomePage() {
                  </p>
                  <div className="relative z-50 mt-auto w-full">
                     <a 
-                      href="https://buy.stripe.com/fZu00lgNddy9eoN7sC"
+                      href="https://buy.stripe.com/fZu00lgNddy9eoN7h6"
                       className="btn-secondary w-full text-xs py-2 text-center block"
                     >
                       Acheter le guide (29 €)
