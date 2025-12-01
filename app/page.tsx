@@ -209,7 +209,12 @@ export default function HomePage() {
                    Société en Pologne : le guide clair et honnête. Comprendre la fiscalité, les charges, le ZUS. Ce que personne n’explique vraiment.
                  </p>
                  <div className="relative z-50 mt-auto w-full">
-                    <BuyButton priceId="price_1SZU3rRPyuf04COPYzN4y4KX" className="btn-secondary w-full text-xs py-2">Acheter le guide (29 €)</BuyButton>
+                    <a 
+                      href="https://buy.stripe.com/fZu00lgNddy9eoN7sC"
+                      className="btn-secondary w-full text-xs py-2 text-center block"
+                    >
+                      Acheter le guide (29 €)
+                    </a>
                  </div>
               </div>
 
