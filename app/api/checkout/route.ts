@@ -3,9 +3,13 @@ import { stripe } from "@/lib/stripe";
 
 export async function POST(request: Request) {
   try {
-    const { priceId, extraItems } = await request.json();
+    const body = await request.json();
+    console.log("Checkout Request Body:", body); // DEBUG LOG
+
+    const { priceId, extraItems } = body;
 
     if (!priceId) {
+      console.error("Missing priceId");
       return NextResponse.json({ error: "Price ID is required" }, { status: 400 });
     }
 
@@ -29,6 +33,8 @@ export async function POST(request: Request) {
       });
     }
 
+    console.log("Creating Stripe Session with items:", line_items); // DEBUG LOG
+
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       payment_method_types: ["card"],
@@ -42,10 +48,10 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ url: session.url });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Stripe Checkout Error:", error);
     return NextResponse.json(
-      { error: "Internal Server Error" },
+      { error: error.message || "Internal Server Error" },
       { status: 500 }
     );
   }
