@@ -2,16 +2,20 @@ import { NextResponse } from "next/server";
 import { stripe } from "@/lib/stripe";
 
 export async function POST(request: Request) {
+  let line_items: any[] = [];
+  let priceId = "";
+
   try {
     const body = await request.json();
-    const { priceId, extraItems } = body;
+    priceId = body.priceId;
+    const { extraItems } = body;
 
     if (!priceId) {
       return NextResponse.json({ error: "Price ID is required" }, { status: 400 });
     }
 
     // Construction des lignes de la facture
-    const line_items = [
+    line_items = [
       {
         price: priceId,
         quantity: 1,
@@ -45,9 +49,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ url: session.url });
   } catch (error: any) {
     console.error("Stripe Checkout Error:", error);
+    
     // Si l'erreur vient du mode (ex: le prix est récurrent), on retente en mode subscription
-    if (error.raw?.code === 'price_type_mismatch' || error.message?.includes("recurring")) {
+    if (line_items.length > 0 && (error.raw?.code === 'price_type_mismatch' || error.message?.includes("recurring") || error.message?.includes("subscription"))) {
        try {
+          console.log("Retrying in subscription mode...");
           const sessionSub = await stripe.checkout.sessions.create({
             mode: "subscription",
             payment_method_types: ["card"],
@@ -59,6 +65,7 @@ export async function POST(request: Request) {
           });
           return NextResponse.json({ url: sessionSub.url });
        } catch (subError: any) {
+          console.error("Subscription Retry Error:", subError);
           return NextResponse.json({ error: subError.message }, { status: 500 });
        }
     }
