@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BuyButton } from "@/components/BuyButton";
+import { ConfigurableBuyButton } from "@/components/ConfigurableBuyButton";
 
 export const metadata: Metadata = {
   title: "Création Société en Pologne (sp. z o.o.) | Fiscalité 9% | Bridgely",
@@ -58,10 +58,16 @@ export default function CreationPolognePage() {
               <li>• 30 jours de support par e-mail</li>
             </ul>
             <div className="mt-4">
-              <p className="text-2xl font-bold text-[color:var(--color-accent)] mb-4">990 € <span className="text-sm font-normal text-slate-400">HT</span></p>
-              <BuyButton priceId="price_1SZVOiRPyuf04COPv5rrXKrP" className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm">
-                Commander la Standard
-              </BuyButton>
+              <ConfigurableBuyButton
+                  mainPriceId="price_1SZVOiRPyuf04COPv5rrXKrP"
+                  mainPriceLabel="Formule Standard"
+                  basePrice={990}
+                  extraOptionPriceId="price_1SZVRrRPyuf04COPkLcCj0Rb"
+                  extraOptionPrice={350}
+                  extraOptionLabel="Associé supplémentaire"
+                  buttonLabel="Commander la Standard"
+                  className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm"
+                />
               <p className="text-[10px] text-slate-400 mt-2 text-center">
                 + 350 € par associé supplémentaire
               </p>
@@ -81,10 +87,16 @@ export default function CreationPolognePage() {
               <li>• Support étendu 60 jours</li>
             </ul>
             <div className="mt-4">
-              <p className="text-2xl font-bold text-slate-900 mb-4">1 490 € <span className="text-sm font-normal text-slate-500">HT</span></p>
-              <BuyButton priceId="price_1SZVQ3RPyuf04COPAt7wWulO" className="w-full btn-primary py-3 rounded-xl text-sm justify-center">
-                Commander la Formule Plus
-              </BuyButton>
+              <ConfigurableBuyButton
+                  mainPriceId="price_1SZVQ3RPyuf04COPAt7wWulO"
+                  mainPriceLabel="Formule Plus"
+                  basePrice={1490}
+                  extraOptionPriceId="price_1SZVRrRPyuf04COPkLcCj0Rb"
+                  extraOptionPrice={350}
+                  extraOptionLabel="Associé supplémentaire"
+                  buttonLabel="Commander la Formule Plus"
+                  className="w-full btn-primary py-3 rounded-xl text-sm justify-center"
+                />
               <p className="text-[10px] text-slate-500 mt-2 text-center">
                 + 350 € par associé supplémentaire
               </p>

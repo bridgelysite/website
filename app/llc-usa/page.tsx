@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BuyButton } from "@/components/BuyButton";
+import { ConfigurableBuyButton } from "@/components/ConfigurableBuyButton";
 
 export const metadata: Metadata = {
   title: "Création LLC USA (Delaware, Wyoming) | Bridgely",
@@ -70,14 +70,16 @@ export default function LlcUsaPage() {
               <li>• Pack de documents LLC (Articles of Org.)</li>
             </ul>
             <div className="mt-4">
-                <p className="text-sm font-semibold mb-1">
-                Honoraires Bridgely (hors frais d’État) :
-                </p>
-                <p className="text-2xl font-bold text-[color:var(--color-accent)] mb-4">890 € <span className="text-sm font-normal text-slate-400">HT</span></p>
-                
-                <BuyButton priceId="price_1SZVSqRPyuf04COPQmrC6lJk" className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm">
-                  Commander LLC Standard
-                </BuyButton>
+                <ConfigurableBuyButton
+                  mainPriceId="price_1SZVSqRPyuf04COPQmrC6lJk"
+                  mainPriceLabel="LLC Standard"
+                  basePrice={890}
+                  extraOptionPriceId="price_1SZVRrRPyuf04COPkLcCj0Rb"
+                  extraOptionPrice={350}
+                  extraOptionLabel="Associé supplémentaire"
+                  buttonLabel="Commander LLC Standard"
+                  className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm"
+                />
                 <p className="text-[10px] text-slate-400 mt-2 text-center">
                    Compte en banque en ligne en option : + 350 €
                 </p>
@@ -97,14 +99,16 @@ export default function LlcUsaPage() {
               <li>• Guide digital "LLC & fiscalité internationale"</li>
             </ul>
              <div className="mt-4">
-                <p className="text-sm font-semibold text-slate-700 mb-1">
-                Honoraires Bridgely (hors frais d’État) :
-                </p>
-                <p className="text-2xl font-bold text-slate-900 mb-4">1 290 € <span className="text-sm font-normal text-slate-500">HT</span></p>
-                
-                <BuyButton priceId="price_1SZVtVRPyuf04COPUiX3tdow" className="w-full btn-primary py-3 rounded-xl text-sm justify-center">
-                  Commander LLC Plus
-                </BuyButton>
+                <ConfigurableBuyButton
+                  mainPriceId="price_1SZVtVRPyuf04COPUiX3tdow"
+                  mainPriceLabel="LLC Formule Plus"
+                  basePrice={1290}
+                  extraOptionPriceId="price_1SZVRrRPyuf04COPkLcCj0Rb"
+                  extraOptionPrice={350}
+                  extraOptionLabel="Associé supplémentaire"
+                  buttonLabel="Commander LLC Plus"
+                  className="w-full btn-primary py-3 rounded-xl text-sm justify-center"
+                />
                  <p className="text-[10px] text-slate-500 mt-2 text-center">
                    Compte en banque en ligne en option : + 350 €
                 </p>
