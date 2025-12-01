@@ -74,7 +74,7 @@ export default function LlcUsaPage() {
                 Honoraires Bridgely (hors frais d’État) :
                 </p>
                 <OptionalBuyButton
-                  mainPriceId="price_1SZVSqRPyuf04COPQmrC6lJk"
+                  mainPriceId="price_1SZXX3RPyuf04COPzZ6GJWnO"
                   mainPriceLabel="LLC Standard"
                   basePrice={890}
                   optionPriceId="price_1SZVVERPyuf04COPJiX9YpcB"
@@ -104,7 +104,7 @@ export default function LlcUsaPage() {
                 Honoraires Bridgely (hors frais d’État) :
                 </p>
                 <OptionalBuyButton
-                  mainPriceId="price_1SZVtVRPyuf04COPUiX3tdow"
+                  mainPriceId="price_1SZXY1RPyuf04COPez7nGJ8O"
                   mainPriceLabel="LLC Formule Plus"
                   basePrice={1290}
                   optionPriceId="price_1SZVVERPyuf04COPJiX9YpcB"
