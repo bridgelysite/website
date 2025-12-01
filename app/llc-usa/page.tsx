@@ -82,6 +82,7 @@ export default function LlcUsaPage() {
                   optionLabel="Option : Compte en banque en ligne"
                   buttonLabel="Commander LLC Standard"
                   className="w-full bg-[color:var(--color-accent)] hover:bg-amber-300 text-slate-900 font-bold py-3 rounded-xl transition-colors text-sm"
+                  totalPriceClassName="text-white"
                 />
             </div>
           </div>
