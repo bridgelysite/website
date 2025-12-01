@@ -184,71 +184,83 @@ export default function HomePage() {
            </div>
 
            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Pack 1 - Guide Pologne */}
-              <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md flex flex-col">
-                 <div className="flex justify-between items-start mb-3">
-                   <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-[10px] font-bold uppercase">Pologne</span>
-                   <span className="text-lg font-bold text-slate-900">29 €</span>
-                 </div>
-                 <h3 className="font-semibold text-slate-900 mb-2">Avantages Société Pologne</h3>
-                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Pourquoi et comment entreprendre en Pologne ? Fiscalité, charges, vie quotidienne.</p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M37" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
-              </div>
-
-              {/* Pack 2 - Guide Delaware */}
-              <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md flex flex-col">
-                 <div className="flex justify-between items-start mb-3">
-                   <span className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded text-[10px] font-bold uppercase">USA</span>
-                   <span className="text-lg font-bold text-slate-900">29 €</span>
-                 </div>
-                 <h3 className="font-semibold text-slate-900 mb-2">Avantages LLC Delaware</h3>
-                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Tout savoir sur la LLC au Delaware : anonymat, protection, zéro impôt US (sous conditions).</p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M38" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
-              </div>
-
-              {/* Pack 3 - Complet Pologne */}
+              {/* Pack 1 - Pack Pologne Premium */}
               <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md relative overflow-hidden flex flex-col">
                  <div className="absolute top-0 right-0 bg-yellow-400 text-[9px] font-bold px-2 py-1 rounded-bl-lg">POPULAIRE</div>
                  <div className="flex justify-between items-start mb-3">
-                   <span className="bg-slate-100 text-slate-600 px-2 py-1 rounded text-[10px] font-bold uppercase">Business</span>
+                   <span className="bg-slate-100 text-slate-600 px-2 py-1 rounded text-[10px] font-bold uppercase">🇵🇱 Pologne</span>
                    <span className="text-lg font-bold text-slate-900">79 €</span>
                  </div>
-                 <h3 className="font-semibold text-slate-900 mb-2">Pack Complet Pologne</h3>
-                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Statuts commentés, checklist, modèles de contrats, guide fiscal complet.</p>
+                 <h3 className="font-semibold text-slate-900 mb-2">Pack Pologne Premium</h3>
+                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
+                   Créer sa société en Pologne (sans erreur). Statuts commentés, modèles de contrats, guide fiscal clair, checklist complète.
+                 </p>
                  <Link href="/pologne-business-pack" className="btn-primary w-full text-xs py-2 text-center mt-auto">Découvrir</Link>
               </div>
 
-              {/* Pack 4 - Complet LLC Delaware */}
-              <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md relative overflow-hidden flex flex-col">
-                 <div className="absolute top-0 right-0 bg-slate-800 text-white text-[9px] font-bold px-2 py-1 rounded-bl-lg">NOUVEAU</div>
-                 <div className="flex justify-between items-start mb-3">
-                   <span className="bg-slate-100 text-slate-600 px-2 py-1 rounded text-[10px] font-bold uppercase">Business</span>
-                   <span className="text-lg font-bold text-slate-900">89 €</span>
-                 </div>
-                 <h3 className="font-semibold text-slate-900 mb-2">Pack Complet LLC Delaware</h3>
-                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Operating Agreement modèle, résolutions annuelles, guide compliance & banking.</p>
-                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M39" className="btn-secondary w-full text-xs py-2 mt-auto">Voir le détail</BuyButton>
-              </div>
-
-              {/* Pack 5 - Freelance Nomad */}
+              {/* Pack 2 - Guide Pologne */}
               <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md flex flex-col">
                  <div className="flex justify-between items-start mb-3">
-                   <span className="bg-emerald-50 text-emerald-700 px-2 py-1 rounded text-[10px] font-bold uppercase">Lifestyle</span>
+                   <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-[10px] font-bold uppercase">🇵🇱 Guide</span>
+                   <span className="text-lg font-bold text-slate-900">29 €</span>
+                 </div>
+                 <h3 className="font-semibold text-slate-900 mb-2">Guide Pologne — Avantages & Fiscalité</h3>
+                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
+                   Société en Pologne : le guide clair et honnête. Comprendre la fiscalité, les charges, le ZUS. Ce que personne n’explique vraiment.
+                 </p>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M37" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
+              </div>
+
+              {/* Pack 3 - Pack LLC USA Pro */}
+              <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md relative overflow-hidden flex flex-col">
+                 <div className="absolute top-0 right-0 bg-slate-800 text-white text-[9px] font-bold px-2 py-1 rounded-bl-lg">POPULAIRE</div>
+                 <div className="flex justify-between items-start mb-3">
+                   <span className="bg-slate-100 text-slate-600 px-2 py-1 rounded text-[10px] font-bold uppercase">🇺🇸 USA</span>
+                   <span className="text-lg font-bold text-slate-900">89 €</span>
+                 </div>
+                 <h3 className="font-semibold text-slate-900 mb-2">Pack LLC USA Pro</h3>
+                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
+                   LLC Delaware/Wyoming : la structure internationale fiable. Operating Agreement, banking, compliance. Pour créer une LLC propre et sécurisée.
+                 </p>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M39" className="btn-primary w-full text-xs py-2 mt-auto">Voir le détail</BuyButton>
+              </div>
+
+              {/* Pack 4 - Guide LLC Delaware */}
+              <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md flex flex-col">
+                 <div className="flex justify-between items-start mb-3">
+                   <span className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded text-[10px] font-bold uppercase">🇺🇸 Guide</span>
+                   <span className="text-lg font-bold text-slate-900">29 €</span>
+                 </div>
+                 <h3 className="font-semibold text-slate-900 mb-2">Guide LLC Delaware — Confidentialité & Fiscalité</h3>
+                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
+                   Tout comprendre sans se faire avoir. Confidentialité, fiscalité 0 %, banques, obligations réelles. Le guide qui explique tout — sans promesses magiques.
+                 </p>
+                 <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M38" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter le guide</BuyButton>
+              </div>
+
+              {/* Pack 5 - Kit Freelance Nomad */}
+              <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md flex flex-col">
+                 <div className="flex justify-between items-start mb-3">
+                   <span className="bg-emerald-50 text-emerald-700 px-2 py-1 rounded text-[10px] font-bold uppercase">🌍 Nomad</span>
                    <span className="text-lg font-bold text-slate-900">49 €</span>
                  </div>
-                 <h3 className="font-semibold text-slate-900 mb-2">Kit "Freelance Nomad"</h3>
-                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Checklist départ, assurance santé, résidence fiscale : ne rien oublier avant de partir.</p>
+                 <h3 className="font-semibold text-slate-900 mb-2">Kit Freelance Nomad</h3>
+                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
+                   Ne rien oublier avant de partir. Checklist voyage, assurance, fiscalité, résidence, risques. Parfait pour freelances et indépendants.
+                 </p>
                  <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M40" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
               </div>
 
-              {/* Pack 6 - Contrats Express */}
+              {/* Pack 6 - Contrats Pro */}
               <div className="bg-white rounded-2xl shadow-sm p-5 border border-slate-100 transition hover:shadow-md flex flex-col">
                  <div className="flex justify-between items-start mb-3">
-                   <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-[10px] font-bold uppercase">Outils</span>
+                   <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-[10px] font-bold uppercase">📄 Contrats</span>
                    <span className="text-lg font-bold text-slate-900">49 €</span>
                  </div>
-                 <h3 className="font-semibold text-slate-900 mb-2">Pack Contrats Express</h3>
-                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">Modèles de contrats de prestation bilingues (FR/EN) solides pour vos clients internationaux.</p>
+                 <h3 className="font-semibold text-slate-900 mb-2">Pack Contrats Pro (FR/EN)</h3>
+                 <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
+                   Contrats prêts à signer pour freelances & consultants. Modèles solides, bilingues, propres. Pour travailler avec des clients internationaux sans prise de tête.
+                 </p>
                  <BuyButton priceId="price_1QjIkliRPyuf04COMX7O0M41" className="btn-secondary w-full text-xs py-2 mt-auto">Acheter</BuyButton>
               </div>
            </div>
