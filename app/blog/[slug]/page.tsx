@@ -4,21 +4,63 @@ import { notFound } from "next/navigation";
 
 // Simulation des données (à remplacer par vos vrais articles plus tard)
 const posts: Record<string, { title: string; content: string; date: string; category: string }> = {
-  "pourquoi-choisir-pologne-business": {
-    title: "Pourquoi la Pologne est le nouvel eldorado des entrepreneurs digitaux",
+  "salaire-minimum-pologne-2025": {
+    title: "SMIC en Pologne (2025) : Combien ça coûte vraiment d'embaucher ?",
     date: "1 Décembre 2025",
     category: "Pologne",
     content: `
-      <p class="mb-4">La Pologne n'est plus ce pays de l'Est gris et lointain que certains imaginent encore. C'est devenu en quelques années le hub technologique central de l'Europe, attirant Google, Microsoft, et des milliers d'entrepreneurs indépendants.</p>
-      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">1. Une fiscalité pragmatique</h2>
-      <p class="mb-4">Contrairement à la France et ses cotisations sociales lourdes, la Pologne offre plusieurs régimes fiscaux adaptés aux petites structures, comme le ryczałt (impôt sur le chiffre d'affaires) ou l'IP Box pour les développeurs.</p>
-      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">2. Un coût de vie maîtrisé</h2>
-      <p class="mb-4">Même si Varsovie rattrape son retard, le coût de la vie reste 30 à 40% moins élevé qu'à Paris ou Berlin. Vos euros vous permettent un style de vie bien supérieur.</p>
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-8">
-        <p class="font-semibold text-blue-900">Le saviez-vous ?</p>
-        <p class="text-blue-800 text-sm mt-1">Varsovie est classée dans le top 10 des villes "Business Friendly" d'Europe en 2024.</p>
+      <p class="lead text-xl text-slate-600 mb-8">
+        Pour un entrepreneur français, la Pologne offre un compromis rare : des talents qualifiés, une culture de travail occidentale, et un coût du travail encore très compétitif. Mais combien cela coûte-t-il vraiment en 2025 ?
+      </p>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Les chiffres officiels 2025</h2>
+      <p class="mb-4">
+        Depuis le 1er janvier 2025, le salaire minimum brut en Pologne est fixé à <strong>4 666 PLN</strong>, soit environ <strong>1 091 €</strong> (selon le taux de change).
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2 ml-4">
+        <li><strong>Salaire Brut :</strong> 4 666 PLN (≈ 1 091 €)</li>
+        <li><strong>Taux horaire minimum :</strong> 30,50 PLN (≈ 7,10 €)</li>
+      </ul>
+      <p class="mb-4 text-sm text-slate-500 italic">
+        Source : <a href="https://lessentieldeleco.fr/4570-smic-a-combien-seleve-le-salaire-minimum-en-pologne/" target="_blank" rel="nofollow" class="underline hover:text-blue-600">L'Essentiel de l'Éco</a>
+      </p>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Combien ça coûte à l'employeur ? (Coût Total)</h2>
+      <p class="mb-4">
+        C'est là que la différence avec la France est frappante. En France, pour un SMIC, l'employeur paie environ 45% de charges patronales (hors allègements). En Pologne, le "surcoût" employeur est d'environ <strong>20,48%</strong> au-dessus du brut.
+      </p>
+      <div class="bg-slate-100 p-6 rounded-xl my-6">
+        <h3 class="font-bold text-lg mb-4">Exemple de coût mensuel pour un salarié au SMIC (Estimation)</h3>
+        <div class="grid grid-cols-2 gap-4 text-sm">
+          <div>Salaire Brut :</div>
+          <div class="font-semibold text-right">4 666 PLN</div>
+          <div>Charges Patronales (≈ 20%) :</div>
+          <div class="font-semibold text-right">+ 956 PLN</div>
+          <div class="border-t border-slate-300 pt-2 font-bold mt-2">COÛT TOTAL EMPLOYEUR :</div>
+          <div class="border-t border-slate-300 pt-2 font-bold text-right mt-2 text-emerald-700">≈ 5 622 PLN</div>
+        </div>
+        <p class="text-xs text-center mt-4 text-slate-500">Soit environ <strong>1 315 € coût total</strong> pour l'entreprise.</p>
       </div>
-      <p class="mb-4">Pour en savoir plus sur la création de société, consultez notre <a href="/creation-societe-pologne" class="text-blue-600 hover:underline">guide complet sur la Pologne</a>.</p>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Pourquoi est-ce intéressant pour votre business ?</h2>
+      <p class="mb-4">
+        Embaucher en Pologne, ce n'est pas chercher le "low cost" à tout prix (pour cela, l'Asie reste moins chère). C'est chercher le <strong>rapport qualité/prix</strong>.
+      </p>
+      <p class="mb-4">
+        Pour environ <strong>1 300 - 1 500 € coût total</strong>, vous pouvez avoir un employé junior motivé, qui parle souvent anglais, dans un cadre juridique stable et européen (UE).
+      </p>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Ce qu'il faut retenir</h2>
+      <p class="mb-4">
+        Le SMIC polonais augmente vite (+8,5% par rapport à mi-2024), signe que le pays se développe. Mais l'écart avec l'Europe de l'Ouest reste massif pour un employeur, surtout grâce aux charges sociales plus légères et à l'impôt sur les sociétés réduit (9% pour les petites entreprises).
+      </p>
+      
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mt-8">
+        <p class="font-semibold text-blue-900">Vous voulez embaucher en Pologne ?</p>
+        <p class="text-blue-800 text-sm mt-1">
+          Il vous faut d'abord une structure locale. Le <a href="/pologne-business-pack" class="underline font-bold">Pack Pologne Premium</a> contient tout ce qu'il faut pour démarrer : statuts, guide fiscal et modèles de contrats.
+        </p>
+      </div>
     `,
   },
   "llc-delaware-vs-wyoming": {
@@ -27,7 +69,11 @@ const posts: Record<string, { title: string; content: string; date: string; cate
     category: "USA",
     content: `
       <p class="mb-4">C'est la question N°1 de nos clients. On vous dit tout.</p>
-      <p>Le Delaware est prestigieux, le Wyoming est économique. Faites votre choix en fonction de vos besoins réels, pas de la "hype".</p>
+      <p class="mb-4">Le Delaware est prestigieux, le Wyoming est économique. Faites votre choix en fonction de vos besoins réels, pas de la "hype".</p>
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Le Delaware : Pour les Startups</h2>
+      <p class="mb-4">Si vous visez une levée de fonds auprès de VCs américains, le Delaware est obligatoire. C'est le standard.</p>
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Le Wyoming : Pour les Freelances & E-commerçants</h2>
+      <p class="mb-4">Moins de frais annuels, anonymat garanti, pas d'impôt sur le revenu de l'État. C'est le choix pragmatique pour 90% des entrepreneurs solos.</p>
     `,
   },
 };
@@ -100,4 +146,3 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     </div>
   );
 }
-

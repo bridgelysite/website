@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 // Simulation d'une base de données d'articles
 const posts = [
   {
-    slug: "pourquoi-choisir-pologne-business",
-    title: "Pourquoi la Pologne est le nouvel eldorado des entrepreneurs digitaux",
+    slug: "salaire-minimum-pologne-2025",
+    title: "SMIC en Pologne (2025) : Combien ça coûte vraiment d'embaucher ?",
     excerpt:
-      "Fiscalité avantageuse, coûts réduits, écosystème tech dynamique : découvrez pourquoi de plus en plus d'entrepreneurs choisissent Varsovie ou Cracovie.",
+      "Avec un salaire minimum à 4 666 PLN (environ 1 090 €), la Pologne reste attractive mais rattrape son retard. Analyse du coût employeur pour les entrepreneurs.",
     date: "1 Décembre 2025",
     category: "Pologne",
-    readTime: "5 min",
+    readTime: "4 min",
   },
   {
     slug: "llc-delaware-vs-wyoming",
