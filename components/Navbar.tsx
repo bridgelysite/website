@@ -52,19 +52,26 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Link href="/consulting-international" className="btn-primary text-sm">
+          <a
+            href="https://calendly.com/hinnovllc/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-sm"
+          >
             Parler à un expert
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Actions */}
         <div className="flex items-center gap-3 md:hidden">
-          <Link
-            href="/consulting-international"
+          <a
+            href="https://calendly.com/hinnovllc/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary text-xs px-4 py-2 h-auto"
           >
             Expert
-          </Link>
+          </a>
 
           <button
             className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-white"
@@ -97,13 +104,15 @@ export const Navbar = () => {
                 The user said "visible immédiatement pas caché". Since it's visible above, 
                 we could remove it here to avoid duplication, or keep it for clarity. 
                 I'll keep it as a secondary larger button. */}
-            <Link
-              href="/consulting-international"
+            <a
+              href="https://calendly.com/hinnovllc/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary text-center w-full text-sm mt-2"
               onClick={() => setOpen(false)}
             >
               Parler à un expert
-            </Link>
+            </a>
           </div>
         </div>
       )}

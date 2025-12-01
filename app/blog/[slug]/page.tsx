@@ -133,9 +133,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               Ne restez pas avec vos questions. Nos experts sont là pour vous aider à structurer votre projet.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/consulting-international" className="btn-primary text-slate-900">
+              <a
+                href="https://calendly.com/hinnovllc/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-slate-900"
+              >
                 Parler à un expert
-              </Link>
+              </a>
               <Link href="/packs-digitaux" className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors font-semibold">
                 Voir nos guides
               </Link>
