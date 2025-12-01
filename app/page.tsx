@@ -50,16 +50,29 @@ export default function HomePage() {
               </div>
               
               {/* BANDEAU DÉFILANT (MARQUEE) */}
-              <div className="relative mt-6 mb-2 overflow-hidden max-w-md">
-                <div className="animate-marquee whitespace-nowrap">
-                  <span className="text-sm font-semibold text-[color:var(--color-primary)] mr-8">
-                    ⚡ Optimisez légalement votre situation comme le font les ultra-riches
+              <div className="relative mt-8 mb-4 overflow-hidden max-w-lg border-l-4 border-[color:var(--color-accent)] bg-slate-50/50 py-2">
+                {/* Ligne 1 */}
+                <div className="animate-marquee whitespace-nowrap mb-1">
+                  <span className="text-sm font-bold text-slate-800 mr-8">
+                    ⚡ OPTIMISEZ LÉGALEMENT VOTRE SITUATION
                   </span>
-                  <span className="text-sm font-semibold text-[color:var(--color-primary)] mr-8">
-                    ⚡ Optimisez légalement votre situation comme le font les ultra-riches
+                  <span className="text-sm font-bold text-slate-800 mr-8">
+                    ⚡ OPTIMISEZ LÉGALEMENT VOTRE SITUATION
                   </span>
-                  <span className="text-sm font-semibold text-[color:var(--color-primary)] mr-8">
-                    ⚡ Optimisez légalement votre situation comme le font les ultra-riches
+                  <span className="text-sm font-bold text-slate-800 mr-8">
+                    ⚡ OPTIMISEZ LÉGALEMENT VOTRE SITUATION
+                  </span>
+                </div>
+                {/* Ligne 2 (décalée ou différente) */}
+                <div className="animate-marquee whitespace-nowrap" style={{ animationDirection: 'reverse' }}>
+                   <span className="text-sm font-medium text-[color:var(--color-primary)] mr-8">
+                    COMME LE FONT LES ULTRA-RICHES 💎
+                  </span>
+                  <span className="text-sm font-medium text-[color:var(--color-primary)] mr-8">
+                    COMME LE FONT LES ULTRA-RICHES 💎
+                  </span>
+                  <span className="text-sm font-medium text-[color:var(--color-primary)] mr-8">
+                    COMME LE FONT LES ULTRA-RICHES 💎
                   </span>
                 </div>
               </div>
