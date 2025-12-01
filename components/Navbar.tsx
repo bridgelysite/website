@@ -9,6 +9,7 @@ const navItems = [
   { href: "/creation-societe-pologne", label: "Société en Pologne" },
   { href: "/llc-usa", label: "LLC aux USA" },
   { href: "/packs-digitaux", label: "Packs & Guides" }, // Changed from single pack to general packs page
+  { href: "/blog", label: "Blog" },
   { href: "/consulting-international", label: "Consulting" },
   { href: "/a-propos", label: "À propos" },
   { href: "/contact", label: "Contact" },
