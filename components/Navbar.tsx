@@ -51,7 +51,7 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Link href="/contact" className="btn-primary text-sm">
+          <Link href="/consulting-international" className="btn-primary text-sm">
             Parler à un expert
           </Link>
         </div>
@@ -59,7 +59,7 @@ export const Navbar = () => {
         {/* Mobile Actions */}
         <div className="flex items-center gap-3 md:hidden">
           <Link
-            href="/contact"
+            href="/consulting-international"
             className="btn-primary text-xs px-4 py-2 h-auto"
           >
             Expert
@@ -97,7 +97,7 @@ export const Navbar = () => {
                 we could remove it here to avoid duplication, or keep it for clarity. 
                 I'll keep it as a secondary larger button. */}
             <Link
-              href="/contact"
+              href="/consulting-international"
               className="btn-primary text-center w-full text-sm mt-2"
               onClick={() => setOpen(false)}
             >
