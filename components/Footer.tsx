@@ -13,10 +13,10 @@ export const Footer = () => {
         </div>
         <div className="flex flex-wrap gap-4 text-xs text-slate-500">
           <span>© {new Date().getFullYear()} Bridgely. Tous droits réservés.</span>
-          <Link href="/mentions-legales" className="hover:text-slate-800">
+          <Link href="/mentions-legales" className="hover:text-slate-800" title="Consulter les mentions légales">
             Mentions légales
           </Link>
-          <Link href="/cgv" className="hover:text-slate-800">
+          <Link href="/cgv" className="hover:text-slate-800" title="Consulter les conditions générales de vente">
             CGV
           </Link>
         </div>
