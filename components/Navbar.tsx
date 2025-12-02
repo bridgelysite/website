@@ -22,7 +22,7 @@ export const Navbar = () => {
   return (
     <header className="bg-white/80 backdrop-blur sticky top-0 z-50 border-b border-slate-200">
       <nav className="container-bridgely flex items-center justify-between py-4">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2" title="Retour à l'accueil Bridgely">
           <div className="h-8 w-8 rounded-full bg-[color:var(--color-primary)] flex items-center justify-center text-white text-xs font-bold">
             B
           </div>
@@ -40,6 +40,7 @@ export const Navbar = () => {
             <Link
               key={item.href}
               href={item.href}
+              title={item.label}
               className={`text-sm font-medium ${
                 pathname === item.href
                   ? "text-[color:var(--color-primary)]"
@@ -57,6 +58,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm"
+            title="Réserver une consultation avec un expert"
           >
             Parler à un expert
           </a>
@@ -69,6 +71,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-xs px-4 py-2 h-auto"
+            title="Consultation expert"
           >
             Expert
           </a>
