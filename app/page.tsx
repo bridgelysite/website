@@ -58,16 +58,24 @@ export default function HomePage() {
               </h1>
 
               <p className="text-base text-slate-600 mb-6 max-w-xl">
-                Bridgely aide les entrepreneurs à structurer leur activité en
-                Pologne et aux USA, avec des process clairs, un langage simple
-                et zéro vente de rêve fiscal.
+                Bridgely aide les entrepreneurs à <strong>créer</strong> leur structure en Pologne
+                et aux <strong>États-Unis</strong>, avec des process clairs, un langage simple
+                et pour ne pas <strong>perdre de temps</strong> avec l'administratif.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 mb-3">
-                <Link href="/creation-societe-pologne" className="btn-primary">
+                <Link 
+                  href="/creation-societe-pologne" 
+                  className="btn-primary"
+                  title="Voir l'offre de création de société en Pologne"
+                >
                   Créer ma société en Pologne
                 </Link>
-                <Link href="/llc-usa" className="btn-secondary">
+                <Link 
+                  href="/llc-usa" 
+                  className="btn-secondary"
+                  title="Voir l'offre de création de LLC aux États-Unis"
+                >
                   Créer ma LLC aux USA
                 </Link>
               </div>
@@ -180,7 +188,11 @@ export default function HomePage() {
                  Comprendre avant de payer des milliers d'euros. Des guides clairs à petit prix.
                </p>
              </div>
-             <Link href="/packs-digitaux" className="text-sm font-semibold text-[color:var(--color-primary)] hover:underline hidden sm:block">
+             <Link 
+               href="/packs-digitaux" 
+               className="text-sm font-semibold text-[color:var(--color-primary)] hover:underline hidden sm:block"
+               title="Voir tous les packs et guides digitaux"
+             >
                Voir tous les packs →
              </Link>
            </div>
@@ -197,7 +209,13 @@ export default function HomePage() {
                  <p className="text-xs text-slate-500 mb-4 line-clamp-2 flex-1">
                    Créer sa société en Pologne (sans erreur). Statuts commentés, modèles de contrats, guide fiscal clair, checklist complète.
                  </p>
-                 <Link href="/pologne-business-pack" className="btn-primary w-full text-xs py-2 text-center mt-auto">Découvrir</Link>
+                 <Link 
+                   href="/pologne-business-pack" 
+                   className="btn-primary w-full text-xs py-2 text-center mt-auto"
+                   title="Découvrir le Pack Pologne Premium"
+                 >
+                   Découvrir
+                 </Link>
               </div>
 
               {/* Pack 2 - Guide Pologne */}
@@ -267,7 +285,11 @@ export default function HomePage() {
               </div>
            </div>
             <div className="mt-6 text-center sm:hidden">
-             <Link href="/packs-digitaux" className="text-sm font-semibold text-[color:var(--color-primary)] hover:underline">
+             <Link 
+               href="/packs-digitaux" 
+               className="text-sm font-semibold text-[color:var(--color-primary)] hover:underline"
+               title="Consulter la liste complète des packs"
+             >
                Voir tous les packs →
              </Link>
            </div>
