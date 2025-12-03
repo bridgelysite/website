@@ -44,6 +44,15 @@ const posts = [
     category: "USA",
     readTime: "7 min",
   },
+  {
+    slug: "compte-bancaire-llc-pologne-guide",
+    title: "Compte Bancaire : Le guide de survie pour LLC & Pologne (2025)",
+    excerpt:
+      "Ouvrir une société est facile, ouvrir le compte bancaire l'est moins. Wise, Revolut, Relay ? Comparatif des solutions qui acceptent vraiment les non-résidents.",
+    date: "3 Décembre 2025",
+    category: "Finance",
+    readTime: "6 min",
+  },
 ];
 
 export default function BlogPage() {
