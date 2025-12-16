@@ -53,6 +53,15 @@ const posts = [
     category: "Finance",
     readTime: "6 min",
   },
+  {
+    slug: "compte-bancaire-usa-ein-solutions",
+    title: "Compte Bancaire USA & EIN : Pourquoi c'est difficile (et nos solutions)",
+    excerpt:
+      "Avoir un EIN ne suffit plus pour ouvrir un compte bancaire aux USA. Patriot Act, refus silencieux... On vous explique pourquoi c'est dur et comment Bridgely contourne le problème.",
+    date: "10 Décembre 2025",
+    category: "USA / Finance",
+    readTime: "5 min",
+  },
 ];
 
 export default function BlogPage() {

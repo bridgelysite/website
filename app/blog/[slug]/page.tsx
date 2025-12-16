@@ -129,6 +129,74 @@ const posts: Record<string, { title: string; content: string; date: string; cate
       </p>
     `,
   },
+  "compte-bancaire-usa-ein-solutions": {
+    title: "Compte Bancaire USA & EIN : Pourquoi c'est difficile (et nos solutions)",
+    date: "10 Décembre 2025",
+    category: "USA / Finance",
+    content: `
+      <p class="lead text-xl text-slate-600 mb-8">
+        "J'ai mon EIN, c'est bon je peux ouvrir un compte ?" <br>
+        Réponse courte : <strong>Non.</strong> <br>
+        Réponse longue : L'EIN est indispensable, mais ce n'est que 10% du chemin. Voici pourquoi tant d'entrepreneurs se cassent les dents sur l'ouverture de compte aux USA, et comment contourner les blocages.
+      </p>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">L'EIN : Le Graal qui ne suffit pas</h2>
+      <p class="mb-4">
+        L'<em>Employer Identification Number</em> (EIN) est votre numéro fiscal fédéral. C'est l'équivalent du SIREN. Beaucoup de prestataires vous vendent l'EIN comme une solution magique.
+      </p>
+      <p class="mb-4">
+        <strong>Le problème :</strong> Obtenir un EIN est facile (on remplit un formulaire SS-4). Mais les banques américaines, soumises au <em>Patriot Act</em> et aux règles KYC (<em>Know Your Customer</em>), demandent bien plus que ça.
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2 ml-4">
+        <li>Une adresse physique réelle aux USA (pas une simple PO Box).</li>
+        <li>Une preuve d'identité vérifiable (Passeport).</li>
+        <li>Souvent, une preuve de lien économique avec les USA.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Pourquoi les banques vous rejettent (souvent sans raison)</h2>
+      <p class="mb-4">
+        Vous avez tout rempli en ligne, envoyé votre scan de passeport, et 48h plus tard : <em>"Account Application Denied"</em>. Sans explication.
+      </p>
+      <p class="mb-4">
+        Pourquoi ?
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2 ml-4">
+        <li><strong>L'adresse :</strong> Votre adresse de domiciliation est "flagged" (trop d'entreprises à la même adresse).</li>
+        <li><strong>L'activité :</strong> Vous avez coché "Consulting" ou "Marketing" de manière trop vague, ce qui est considéré comme "High Risk" pour le blanchiment.</li>
+        <li><strong>La nationalité :</strong> Certaines fintechs ferment l'accès à certains pays de résidence du fondateur, du jour au lendemain.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Nos Solutions (Le Secret Bien Gardé)</h2>
+      <p class="mb-4">
+        Chez Bridgely, nous ne faisons pas de magie, nous faisons de la veille. Le paysage bancaire change tous les mois. La banque qui acceptait tout le monde en janvier peut tout bloquer en mars.
+      </p>
+      <p class="mb-4">
+        Nous travaillons avec <strong>3 types de solutions</strong> pour nos clients, en fonction de leur profil :
+      </p>
+      
+      <div class="space-y-4">
+        <div class="bg-white border border-slate-200 p-4 rounded-lg shadow-sm">
+          <h3 class="font-bold text-slate-900">1. La solution "Fintech Agile"</h3>
+          <p class="text-sm text-slate-600 mt-1">Parfaite pour les freelances et e-commerçants. Nous savons lesquelles acceptent les non-résidents <em>cette semaine</em> et comment présenter le dossier pour passer le filtre.</p>
+        </div>
+        <div class="bg-white border border-slate-200 p-4 rounded-lg shadow-sm">
+          <h3 class="font-bold text-slate-900">2. La solution "Néo-banque Internationale"</h3>
+          <p class="text-sm text-slate-600 mt-1">Des établissements plus robustes, qui demandent plus de papiers, mais offrent des IBANs multi-devises. Nous vous aidons à préparer la "compliance".</p>
+        </div>
+        <div class="bg-white border border-slate-200 p-4 rounded-lg shadow-sm">
+          <h3 class="font-bold text-slate-900">3. La solution "Voyage" (Chase / BoA)</h3>
+          <p class="text-sm text-slate-600 mt-1">Si vous pouvez vous déplacer aux USA, nous vous expliquons comment préparer votre rendez-vous pour repartir avec un compte dans une "Brick & Mortar" bank (Chase, Bank of America, etc.).</p>
+        </div>
+      </div>
+
+      <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mt-8">
+        <p class="font-bold text-yellow-900">Le conseil Bridgely</p>
+        <p class="text-yellow-800 text-sm mt-1">
+          Ne payez jamais pour une liste de banques. Payez pour un accompagnement. Une liste est périmée en 3 mois. Un expert sait qui appeler aujourd'hui.
+        </p>
+      </div>
+    `,
+  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
